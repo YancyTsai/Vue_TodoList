@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="todo">
+        <button @click="Add">Add</button>
+        <ul>
+            <li v-for="(todo, index) in todoList" @click="Romove(index)">{{ todo }}</li>
+        </ul>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="TodoList.js"></script>
+
+</html>
